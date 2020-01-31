@@ -1,1 +1,1 @@
-SELECT category_name FROM adverts LEFT JOIN costs USING (ad_id) GROUP BY category_name HAVING AVG(cost_)<500;
+SELECT category_name FROM adverts LEFT JOIN costs USING (id) GROUP BY category_name HAVING AVG(cost)<500;
